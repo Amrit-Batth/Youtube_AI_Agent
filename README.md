@@ -2,10 +2,10 @@
 
 YouTube AI Agent for Fetching and Uploading Popular Tech Videos
 
-#Overview
+# Overview
 This project aims to develop an automated YouTube AI agent capable of fetching the most popular technology-related videos and uploading them to a specified YouTube channel. The agent utilizes Google APIs for authentication, fetching, and uploading videos, and the PyTube library for downloading videos.
 
-Features
+# Features
 Authentication: Secure OAuth 2.0 authentication to access YouTube Data API.
 Fetch Popular Videos: Retrieve the most popular videos related to technology using YouTube Data API.
 Download Videos: Download the fetched videos using PyTube.
@@ -14,17 +14,17 @@ Logging: Comprehensive logging to track the progress and errors during the execu
 Detailed Functionality
 
 
-Authentication:
+# Authentication:
 Utilizes OAuth 2.0 to authenticate and authorize the application.
 Prompts the user to log in and grants necessary permissions for YouTube Data API access.
 
 
-Fetching Popular Videos:
+# Fetching Popular Videos:
 Queries YouTube Data API for the most popular videos in the technology category.
 Retrieves video details including video ID, title, and description.
 
 
-Downloading Videos:
+# Downloading Videos:
 Uses the PyTube library to download the video with the highest resolution available.
 Stores the downloaded video in a specified directory.
 Uploading Videos:
@@ -33,7 +33,7 @@ Utilizes YouTube Data API to upload the downloaded video.
 Sets video metadata including title, description, tags, and category.
 Handles different privacy statuses (public, private, or unlisted).
 
-Logging:
+# Logging:
 Logs important events, such as successful authentication, fetching, downloading, and uploading.
 Logs errors with detailed messages to facilitate troubleshooting.
 Code Structure
@@ -55,13 +55,13 @@ google-api-python-client: For interacting with YouTube Data API.
 pytube: For downloading YouTube videos.
 logging: For logging events and errors.
 
-Setup Instructions
+# Setup Instructions
 Install Dependencies:
 bash
 Copy code
 pip install google-auth-oauthlib google-api-python-client pytube
 
-Obtain Client Secrets File:
+# Obtain Client Secrets File:
 Download your client_secret.json file from the Google API Console.
 
 
